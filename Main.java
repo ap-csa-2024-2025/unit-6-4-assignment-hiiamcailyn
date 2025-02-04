@@ -22,13 +22,50 @@ public class Main
 
   public static boolean hasDuplicates(int[] arr)
   {
-    // replace with your code
+    for (int i = 0; i < arr.length; i++)
+    {
+      for (int j = 0; j < arr.length; j++)
+      {
+        if (i !=j)
+        {
+          if (arr[i] == arr[j])
+          {
+            return true;
+          }
+        }
+      }
+
+      // implement the finding alg here 
+    }
     return false;
   }
 
   public static String findMode(String[] arr)
   {
-    // replace with your code
+    // count it up 
+    int count = 0;
+    int mode - arr[0];
+    int max_coutn = 0; 
+    for (int i = 0; i < arr.length; i++) 
+    {
+      int target = arr[i];
+      count = 0; 
+      for int j = 0; j < arr.length; j++)
+      {
+        if (arr[j] == target) 
+        {
+          count ++;
+        }
+      }
+
+      if (count > max_count)
+      {
+        max_count = coutn; 
+        mode = arr[i];
+      }
+    }
+    return mode;
+  
     return null;
   }
 }
